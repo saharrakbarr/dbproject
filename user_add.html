@@ -1,0 +1,94 @@
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Core CSS -->
+<link rel="stylesheet" href="assets/css/bulma.css">
+<link rel="stylesheet" href="assets/css/core.css">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
+    <title>Add New User</title>
+</head>
+ 
+<body>
+        <style>
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: rgb(3, 65, 165);
+                }
+                
+                li {
+                    float: left;
+                }
+                
+                li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+                
+                
+                
+                </style>
+                </head>
+                <body>
+                
+                <ul>
+                        <li><a  href="home.html">Home</a></li>
+                  <li><a  href="user_table.php">User</a></li>
+                  <li><a href="main.php">Customer</a></li>
+                  <li><a href="product_table.php">Product</a></li>
+                  <li><a href="sp_table.php">Sales Person</a></li>
+                  <li><a href="table.php">Sales Order</a></li>
+              <li><a href="logout.php">Log Out</a></li>
+                </ul>
+    <div class="column is-6 is-component" >
+
+            <div class="inner">
+            
+                    <div class="control" >
+<br/>
+
+<form action="user_add.php" method="post" name="form1">
+       
+        <label>User ID</label>
+                
+        <input class="input is-minimal is-rounded" type="number" placeholder="" name="id">
+        
+            
+                <label>Username</label>
+                
+                <input class="input is-minimal is-rounded" type="text" placeholder="" name="username">
+                
+                <label>Password</label>
+                
+                <input class="input is-minimal is-rounded" type="password" placeholder="" name="password">
+                <label>Sales Person ID</label>
+                
+                <input class="input is-minimal is-rounded" type="text" placeholder="" name="sp_id">
+                 
+               
+
+
+            
+                <div class="spacer"></div>
+                
+            
+                    
+                    <input class="button feather-button primary-button rounded" type="submit" name="Submit"  value="Add"> 
+                    <div class="spacer"></div>
+                    <a class="button feather-button primary-button rounded"value="Cancel"href="user_table.php">Cancel</a>
+                        </div>
+        
+           
+</form>
+
+    
+</body>
+</html>
